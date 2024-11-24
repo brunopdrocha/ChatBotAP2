@@ -31,7 +31,8 @@ class consultaProduto extends ComponentDialog {
                     mensagem += `\n📂 **Categoria:** ${produto.productCategory}\n`;
                     mensagem += `\n📦 **Nome do Produto:** ${produto.productName}\n`;
                     mensagem += `\n💰 **Preço:** R$ ${produto.price.toFixed(2)}\n`;
-                    mensagem += `---------------------------------\n`;
+
+                    mensagem += `\n ---------------------------------\n`;
                 });
                 await stepContext.context.sendActivity(mensagem);
             } else {
